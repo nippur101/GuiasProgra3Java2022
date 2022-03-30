@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Guia00/Guia00.iml" filepath="$PROJECT_DIR$/Guia00/Guia00.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuiaObj1/GuiaObj1.iml" filepath="$PROJECT_DIR$/GuiaObj1/GuiaObj1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuiaObj2/GuiaObj2.iml" filepath="$PROJECT_DIR$/GuiaObj2/GuiaObj2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuiaObjetosIV/GuiaObjetosIV.iml" filepath="$PROJECT_DIR$/GuiaObjetosIV/GuiaObjetosIV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GuiasProgra3Java2022.iml" filepath="$PROJECT_DIR$/.idea/GuiasProgra3Java2022.iml" />
+    </modules>
+  </component>
+</project>
