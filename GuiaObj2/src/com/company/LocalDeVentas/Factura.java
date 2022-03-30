@@ -1,6 +1,8 @@
 package com.company.LocalDeVentas;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -15,7 +17,7 @@ public class Factura {
     private String id;
     private ArrayList<ItemVenta> items;
     private double montoTotal;
-    private LocalDate fecha;
+    private LocalDateTime fecha;
     private Cliente cliente;
 
     public Factura() {
@@ -25,7 +27,7 @@ public class Factura {
         this.id = java.util.UUID.randomUUID().toString().toUpperCase().substring(0,6);
         this.items = items;
         this.montoTotal = montoTotalItems();
-        this.fecha = LocalDate.now();
+        this.fecha = LocalDateTime.now();
         this.cliente = cliente;
     }
 
@@ -45,11 +47,11 @@ public class Factura {
         this.montoTotal = montoTotal;
     }
 
-    public LocalDate getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
@@ -80,7 +82,7 @@ public class Factura {
     @Override
     public String toString() {
         return "Factura:[" +
-                " id= " + id + "  Fecha:" +this.fecha+
+                " id= " + id + "  Fecha:" +this.fecha.format(DateTimeFormatter.ofPattern(" d/M/u. 'Hora' hh:mm a"))+
                 ", monto=" + montoTotal +", MontoCDescuento: "+montoConDescuento()
                 +", "+ cliente.toString() +
                 ']';

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Ejer03();
+        Ejer02();
     }
     public static void Ejer01(){
         //a. Inicialice un objeto de tipo Autor, “Joshua”, “Bloch”, “joshua@email.com”, ’M’.
