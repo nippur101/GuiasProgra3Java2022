@@ -65,7 +65,7 @@ public class Main {
         peliculas.add(pelicula4);
         peliculas.add(pelicula5);
         //endregion
-        
+
         //region CARGA ALQUILERES
         Alquiler alquiler1=new Alquiler(cliente1,pelicula3);
         Alquiler alquiler2=new Alquiler(cliente1,pelicula3);
