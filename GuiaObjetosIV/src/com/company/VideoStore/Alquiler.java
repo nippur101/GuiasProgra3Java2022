@@ -18,6 +18,8 @@ public class Alquiler {
         this.fechaRetiro = LocalDate.now();
         this.fechaDevolucion=LocalDate.now().plusDays(3);
         this.estadoAalquiler = true;
+        cliente.setNroAlquileres(cliente.getNroAlquileres()+1);
+        pelicula.setNroVecesAlquilada(pelicula.getNroVecesAlquilada()+1);
     }
 
     public Cliente getCliente() {

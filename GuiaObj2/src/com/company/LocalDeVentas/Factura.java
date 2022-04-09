@@ -82,7 +82,7 @@ public class Factura {
     @Override
     public String toString() {
         return "Factura:[" +
-                " id= " + id + "  Fecha:" +this.fecha.format(DateTimeFormatter.ofPattern(" d/M/u. 'Hora' hh:mm a"))+
+                " id= " + id + "  Fecha:" +this.fecha.format(DateTimeFormatter.ofPattern(" dd/MM/uu. 'Hora' hh:mm a"))+
                 ", monto=" + montoTotal +", MontoCDescuento: "+montoConDescuento()
                 +", "+ cliente.toString() +
                 ']';

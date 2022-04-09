@@ -2,7 +2,7 @@ package com.company.VideoStore;
 //catálogo de películas, Cada film de su inventario cuenta con un título, una fecha de
 //lanzamiento, una duración en minutos, una clasificación de audiencia, las siglas del país de
 //origen y una descripción de la misma.
-public class Pelicula {
+public class Pelicula implements Comparable<Pelicula>{
     private String titulo;
     private String genero;
     private String clasificacion;
@@ -99,17 +99,29 @@ public class Pelicula {
         this.nroVecesAlquilada = nroVecesAlquilada;
     }
 
+
     @Override
     public String toString() {
         return "Pelicula{" +
-                "titulo='" + titulo + '\'' +
-                ", genero='" + genero + '\'' +
-                ", clasificacion='" + clasificacion + '\'' +
+                "titulo=" + titulo +" ,Nro Veces Alquilada: "+this.getNroVecesAlquilada()+
+                ", genero=" + genero +
+                ", clasificacion='" + clasificacion +
                 ", duracionMin=" + duracionMin +
-                ", fechaLanzamiento='" + fechaLanzamiento + '\'' +
-                ", pais='" + pais + '\'' +
-                ", descripcion='" + descripcion + '\'' +
+                ", fechaLanzamiento=" + fechaLanzamiento +
+                ", pais=" + pais +
+                ", descripcion=" + descripcion +
                 ", nroCopiasDisponibles=" + nroCopiasDisponibles +
-                '}';
+                "}";
+    }
+
+    @Override
+    public int compareTo(Pelicula o) {
+        if(o.getNroVecesAlquilada()>this.nroVecesAlquilada){
+            return 1;
+        }else if(o.getNroVecesAlquilada()>this.nroVecesAlquilada){
+            return 0;
+        }else{
+            return-1;
+        }
     }
 }

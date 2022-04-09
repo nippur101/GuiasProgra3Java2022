@@ -2,33 +2,46 @@ package com.company.VideoStore;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
-public class VideoStore {
-    private ArrayList<Alquiler> alquileres=new ArrayList<>();
-    private ArrayList<Cliente> clientes=new ArrayList<>();
-    private ArrayList<Pelicula> peliculas=new ArrayList<>();
+public class VideoStore  {
+    private List<Alquiler> alquileres=new ArrayList<>();
+    private List<Cliente> clientes=new ArrayList<>();
+    private List<Pelicula> peliculas=new ArrayList<>();
 
     public VideoStore() {
+
     }
 
-    public ArrayList<Alquiler> getAlquileres() {
+    public VideoStore(List<Alquiler> alquileres, List<Cliente> clientes, List<Pelicula> peliculas) {
+        setAlquileres(alquileres);
+        setClientes(clientes);
+        setPeliculas(peliculas);
+    }
+
+    public List<Alquiler> getAlquileres() {
         return alquileres;
     }
 
-    public void setAlquileres(ArrayList<Alquiler> alquileres) {
+    public void setAlquileres(List<Alquiler> alquileres) {
         this.alquileres = alquileres;
     }
 
-    public ArrayList<Cliente> getClientes() {
+    public List<Cliente> getClientes() {
         return clientes;
     }
 
-    public void setClientes(ArrayList<Cliente> clientes) {
+    public void setClientes(List<Cliente> clientes) {
         this.clientes = clientes;
     }
 
-    public ArrayList<Pelicula> getPeliculas() {
+    public List<Pelicula> getPeliculas() {
         return peliculas;
+    }
+
+    public void setPeliculas(List<Pelicula> peliculas) {
+        this.peliculas = peliculas;
     }
 
     public void setPeliculas(ArrayList<Pelicula> peliculas) {
@@ -55,20 +68,17 @@ public class VideoStore {
 
     public void peliculaCliente(Cliente cliente){
         ArrayList<Pelicula> peliCliente=new ArrayList<>();
-        for(Alquiler a:alquileres){
+        for(Alquiler a:this.alquileres){
             if(a.getCliente().equals(cliente)) {
                 peliCliente.add(a.getPelicula());
             }
         }
-        int inicio=peliCliente.size();
-        int fin;
-        if(inicio>=10){
-            fin=inicio-10;
-        }else{
-            fin=0;
-        }
-        for(int i=inicio;fin>i;i--){
-            System.out.println(peliCliente.get(i));
+        int cont=peliCliente.size()-1;
+        int cont2=0;
+        while(cont>=0 && cont2<10){
+            System.out.println(peliCliente.get(cont));
+            cont--;
+            cont2++;
         }
     }
     //Quiere una forma de consultar los títulos que fueron más alquilados.
@@ -79,6 +89,5 @@ public class VideoStore {
 
 
     }
-
 
 }
