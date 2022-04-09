@@ -3,6 +3,7 @@ package com.company.VideoStore;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class VideoStore  {
@@ -73,20 +74,33 @@ public class VideoStore  {
                 peliCliente.add(a.getPelicula());
             }
         }
+        int fin;
         int cont=peliCliente.size()-1;
-        int cont2=0;
-        while(cont>=0 && cont2<10){
+        if(cont<10){
+            fin=0;
+        }else{
+            fin=cont-10;
+        }
+        while(cont>=0 && cont!=fin){
             System.out.println(peliCliente.get(cont));
             cont--;
-            cont2++;
         }
     }
     //Quiere una forma de consultar los títulos que fueron más alquilados.
     public void masAlquilados(){
-        Pelicula peliAux=alquileres.get(0).getPelicula();
-        ArrayList<Pelicula> peliPopulares=new ArrayList<>();
 
+        List<Pelicula> peliPopulares=new ArrayList<>();
+        peliPopulares=this.peliculas;
+        Collections.sort(peliPopulares);
+        int cont=0;
+        for(Pelicula film:peliPopulares){
+            System.out.println(film);
+            cont++;
+            if(cont==10){
+                break;
+            }
 
+        }
 
     }
 

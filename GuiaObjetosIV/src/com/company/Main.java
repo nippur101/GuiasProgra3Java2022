@@ -31,35 +31,42 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+
+        //region CARGA CLIENTES
         Cliente cliente1=new Cliente("Juan","Perez","Acha 163");
         Cliente cliente2=new Cliente("Lionel","Messi","F Alcorta 363");
         Cliente cliente3=new Cliente("Mariano","Martinez","Acevedo 4263");
         Cliente cliente4=new Cliente("Paulo","Dybala","Edison 463");
         Cliente cliente5=new Cliente("Angel","Di Maria","MarioBravo 478");
         Cliente cliente6=new Cliente("Lautaro","Martinez","JuanB Justo 618");
+
         List<Cliente> clientes=new ArrayList<>();
+
         clientes.add(cliente1);
         clientes.add(cliente2);
         clientes.add(cliente3);
         clientes.add(cliente4);
         clientes.add(cliente5);
         clientes.add(cliente6);
+        //endregion
 
-
-
+        // region CARGA PELICULAS
         Pelicula pelicula1=new Pelicula( "Duro de Matar",Genero.accion,"1988",139,"R","Estados Unidos","John McClane, policía de Nueva York, llega a Los Ángeles para celebrar la Navidad, pero se ve envuelto en una lucha contra un grupo de malhechores que toman de rehén a su esposa en un rascacielos, el Nakatomi Plaza.",4);
         Pelicula pelicula2=new Pelicula("Duro de Matar 2",Genero.accion ,"1990",124,"R","Estados Unidos","Un policía de Los Ángeles pelea contra una banda de terroristas que han tomado el aeropuerto de Washington D. C.",2);
         Pelicula pelicula3=new Pelicula("Titanic",Genero.drama, "1997",195,"PG-13","Estados Unidos","Una joven de la alta sociedad abandona a su arrogante pretendiente por un artista humilde en el trasatlántico que se hundió durante su viaje inaugural.",4);
         Pelicula pelicula4=new Pelicula("Guason",Genero.drama ,"2019",122,"R","Estados Unidos","Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.",4);
         Pelicula pelicula5=new Pelicula("John Wick",Genero.accion, "2014",114,"R","Estados Unidos","John Wick es una franquicia de medios de acción y suspenso neo-noir estadounidense",4);
+
         List<Pelicula> peliculas=new ArrayList<>();
+
         peliculas.add(pelicula1);
         peliculas.add(pelicula2);
         peliculas.add(pelicula3);
         peliculas.add(pelicula4);
         peliculas.add(pelicula5);
-
-
+        //endregion
+        
+        //region CARGA ALQUILERES
         Alquiler alquiler1=new Alquiler(cliente1,pelicula3);
         Alquiler alquiler2=new Alquiler(cliente1,pelicula3);
         Alquiler alquiler3=new Alquiler(cliente2,pelicula2);
@@ -80,18 +87,17 @@ public class Main {
         Alquiler alquiler16=new Alquiler();
         Alquiler alquiler17=new Alquiler();
         Alquiler alquiler18=new Alquiler();
-        /*
-        Alquiler alquiler19=new Alquiler();
-        Alquiler alquiler20=new Alquiler();
-        Alquiler alquiler21=new Alquiler();
-        Alquiler alquiler22=new Alquiler();
-        Alquiler alquiler23=new Alquiler();
-        Alquiler alquiler24=new Alquiler();
-        Alquiler alquiler25=new Alquiler();
-        Alquiler alquiler26=new Alquiler();
+
+        Alquiler alquiler19=new Alquiler(cliente1,pelicula3);
+        Alquiler alquiler20=new Alquiler(cliente1,pelicula2);
+        Alquiler alquiler21=new Alquiler(cliente1,pelicula1);
+        Alquiler alquiler22=new Alquiler(cliente1,pelicula5);
+        Alquiler alquiler23=new Alquiler(cliente1,pelicula3);
+        Alquiler alquiler24=new Alquiler(cliente1,pelicula2);
+        Alquiler alquiler25=new Alquiler(cliente1,pelicula4);
 
 
-         */
+
         alquiler15.setCliente(cliente1);
         alquiler15.setFechaDevolucion(LocalDate.parse("2021-07-09"));
         alquiler15.setFechaRetiro(LocalDate.parse("2021-07-06"));
@@ -145,24 +151,27 @@ public class Main {
         alquileres.add(alquiler16);
         alquileres.add(alquiler17);
         alquileres.add(alquiler18);
+        alquileres.add(alquiler19);
+        alquileres.add(alquiler20);
+        alquileres.add(alquiler21);
+        alquileres.add(alquiler22);
+        alquileres.add(alquiler23);
+        alquileres.add(alquiler24);
+        alquileres.add(alquiler25);
+
+        //endregion
 
 
 
 
         VideoStore video=new VideoStore(alquileres,clientes,peliculas);
 
-
+        ///ALQUILERES VIGENTES
         //video.alquieleresVigentes();
-        //video.peliculaCliente(cliente5);
-        for(Pelicula pelicu:peliculas){
-            System.out.println(pelicu);
-        }
-        System.out.println("\n=================================================================\n");
-        //Collections.sort(peliculas,new CompararPeliculas());
-        Collections.sort(peliculas);
-        for(Pelicula pelicu:peliculas){
-            System.out.println(pelicu);
-        }
+        /// 10 ULTIMAS PELICULAS ALQULIADAS POR EL CLIENTE
+        //video.peliculaCliente(cliente1);
+        ///10 PELICULAS MAS ALQUILADAS
+        video.masAlquilados();
 
 
 
