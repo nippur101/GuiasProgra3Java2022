@@ -1,10 +1,7 @@
 package com.company.VideoStore;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class VideoStore  {
     private List<Alquiler> alquileres=new ArrayList<>();
@@ -60,7 +57,8 @@ public class VideoStore  {
 
     public void devolucionesDelDia(){
         for(Alquiler a:alquileres){
-            if(a.getFechaDevolucion()== LocalDate.now()) {
+
+            if(a.getFechaDevolucion().equals( LocalDate.now()) ){
                 System.out.println(a);
             }
         }
@@ -82,7 +80,7 @@ public class VideoStore  {
             fin=cont-10;
         }
         while(cont>=0 && cont!=fin){
-            System.out.println(peliCliente.get(cont));
+            System.out.println(peliCliente.get(cont).getTitulo());
             cont--;
         }
     }
@@ -94,13 +92,83 @@ public class VideoStore  {
         Collections.sort(peliPopulares);
         int cont=0;
         for(Pelicula film:peliPopulares){
-            System.out.println(film);
+            System.out.println(film.getTitulo()+" - Nro Veces Alquilada: "+film.getNroVecesAlquilada());
             cont++;
             if(cont==10){
                 break;
             }
-
         }
+    }
+    public void peliculasPorGenero(String genero){
+        List<Pelicula> ordenGeneropelis=new ArrayList<>();
+
+        for (Pelicula films:peliculas){
+            if(films.getGenero().equals(genero)){
+                ordenGeneropelis.add(films);   //SEPARA POR GENERO
+            }
+        }
+        Collections.sort(ordenGeneropelis);     //ORDENA LAS MAS POPULARES
+        for (Pelicula filmsGen:ordenGeneropelis){
+            System.out.println(filmsGen.getTitulo()+" - Nro Veces Alquilada: "+filmsGen.getNroVecesAlquilada()); //MUESTRA LAS MAS POPULARES
+        }
+
+    }
+
+    public Pelicula buscarPelicula(String nombrePelicula){
+        Pelicula peliculaBuscada=new Pelicula();
+        for (Pelicula films:peliculas){
+            if(films.getTitulo().equals(nombrePelicula)){
+                 peliculaBuscada=films;
+                 return films;
+            }
+        }
+        return peliculaBuscada;
+    }
+    public void mostrarDatosPelicula(Pelicula pelicula){
+        System.out.println("Que datos de la pelicula desea ver:");
+        System.out.println("1-fecha de Lanzamiento\n2-Genero\n3-Clasificacion\n4-Duracion\n5-Pais de origen\n6-Descripcion\n7-Nro de copias");
+        Scanner entrada= new Scanner(System.in);
+        System.out.println("Ingrese un Numero \n");
+        int a=entrada.nextInt();
+        switch (a){
+            case 1:
+                System.out.println(pelicula.getFechaLanzamiento());
+                break;
+            case 2:
+                System.out.println(pelicula.getGenero());
+                break;
+            case 3:
+                System.out.println(pelicula.getClasificacion());
+                break;
+            case 4:
+                System.out.println(pelicula.getDuracionMin());
+                break;
+            case 5:
+                System.out.println(pelicula.getPais());
+                break;
+            case 6:
+                System.out.println(pelicula.getDescripcion());
+                break;
+            case 7:
+                System.out.println(pelicula.getNroCopiasDisponibles());
+                break;
+            default:
+                System.out.println("La opcion no es valida");
+        }
+
+    }
+    public void verInfoPelicula(){
+        Scanner entrada= new Scanner(System.in);
+        System.out.println("Ingrese el Nombre de la pelicula a buscar \n");
+        String nombrePeli=entrada.nextLine();
+
+        if(null==buscarPelicula(nombrePeli).getTitulo()){
+            System.out.println("LA PELICULA NO FUE ENCONTRADA");
+        }else{
+            mostrarDatosPelicula(buscarPelicula(nombrePeli));
+        }
+
+
 
     }
 

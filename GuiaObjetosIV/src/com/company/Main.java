@@ -51,11 +51,16 @@ public class Main {
         //endregion
 
         // region CARGA PELICULAS
-        Pelicula pelicula1=new Pelicula( "Duro de Matar",Genero.accion,"1988",139,"R","Estados Unidos","John McClane, policía de Nueva York, llega a Los Ángeles para celebrar la Navidad, pero se ve envuelto en una lucha contra un grupo de malhechores que toman de rehén a su esposa en un rascacielos, el Nakatomi Plaza.",4);
-        Pelicula pelicula2=new Pelicula("Duro de Matar 2",Genero.accion ,"1990",124,"R","Estados Unidos","Un policía de Los Ángeles pelea contra una banda de terroristas que han tomado el aeropuerto de Washington D. C.",2);
-        Pelicula pelicula3=new Pelicula("Titanic",Genero.drama, "1997",195,"PG-13","Estados Unidos","Una joven de la alta sociedad abandona a su arrogante pretendiente por un artista humilde en el trasatlántico que se hundió durante su viaje inaugural.",4);
-        Pelicula pelicula4=new Pelicula("Guason",Genero.drama ,"2019",122,"R","Estados Unidos","Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.",4);
-        Pelicula pelicula5=new Pelicula("John Wick",Genero.accion, "2014",114,"R","Estados Unidos","John Wick es una franquicia de medios de acción y suspenso neo-noir estadounidense",4);
+        Pelicula pelicula1=new Pelicula( "Duro de Matar",Genero.accion,"1988",139,Clasificacion.R,"Estados Unidos","John McClane, policía de Nueva York, llega a Los Ángeles para celebrar la Navidad, pero se ve envuelto en una lucha contra un grupo de malhechores que toman de rehén a su esposa en un rascacielos, el Nakatomi Plaza.",4);
+        Pelicula pelicula2=new Pelicula("Duro de Matar 2",Genero.accion ,"1990",124,Clasificacion.R,"Estados Unidos","Un policía de Los Ángeles pelea contra una banda de terroristas que han tomado el aeropuerto de Washington D. C.",2);
+        Pelicula pelicula3=new Pelicula("Titanic",Genero.drama, "1997",195,Clasificacion.PG13,"Estados Unidos","Una joven de la alta sociedad abandona a su arrogante pretendiente por un artista humilde en el trasatlántico que se hundió durante su viaje inaugural.",4);
+        Pelicula pelicula4=new Pelicula("Guason",Genero.drama ,"2019",122,Clasificacion.R,"Estados Unidos","Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.",4);
+        Pelicula pelicula5=new Pelicula("John Wick",Genero.accion, "2014",114,Clasificacion.R,"Estados Unidos","John Wick es una franquicia de medios de acción y suspenso neo-noir estadounidense",4);
+        Pelicula pelicula6=new Pelicula("Audible",Genero.documental, "2021",39,Clasificacion.R,"Estados Unidos","Conmocionado por el suicido de un amigo, Amaree McKenstry-Hall un jugador de fútbol americano de una escuela para sordos sobrelleva su vida como puede mientras se prepara para su último partido.",4);
+        Pelicula pelicula7=new Pelicula("El Padrino",Genero.drama, "1972",134,Clasificacion.NC17,"Estados Unidos","narra la historia de un hombre, Vito Corleone, el capo más respetado de Nueva York",4);
+        Pelicula pelicula8=new Pelicula("Pulp Fiction",Genero.accion, "1994",154,Clasificacion.NC17,"Estados Unidos","Pulp Fiction está narrada en un orden no cronológico y cuenta tres historias entrelazadas.",4);
+        Pelicula pelicula9=new Pelicula("Volver al futuro",Genero.aventura, "1985",117,Clasificacion.PG,"Estados Unidos","Doc, un científico que ha construido una máquina del tiempo. Cuando los dos prueban el artefacto, un error fortuito hace que Marty llegue a 1955",4);
+        Pelicula pelicula10=new Pelicula("Indiana Jones: en busca del arca perdida",Genero.aventura, "1981",115,"R","Estados Unidos","Indiana Jones la búsqueda del Arca de la Alianza, una reliquia bíblica",4);
 
         List<Pelicula> peliculas=new ArrayList<>();
 
@@ -64,6 +69,13 @@ public class Main {
         peliculas.add(pelicula3);
         peliculas.add(pelicula4);
         peliculas.add(pelicula5);
+        peliculas.add(pelicula6);
+        peliculas.add(pelicula7);
+        peliculas.add(pelicula8);
+        peliculas.add(pelicula9);
+        peliculas.add(pelicula10);
+
+
         //endregion
 
         //region CARGA ALQUILERES
@@ -77,8 +89,8 @@ public class Main {
         Alquiler alquiler8=new Alquiler(cliente6,pelicula3);
         Alquiler alquiler9=new Alquiler(cliente4,pelicula4);
         Alquiler alquiler10=new Alquiler(cliente5,pelicula3);
-        Alquiler alquiler11=new Alquiler(cliente4,pelicula2);
-        Alquiler alquiler12=new Alquiler(cliente5,pelicula1);
+        Alquiler alquiler11=new Alquiler(cliente4,pelicula7);
+        Alquiler alquiler12=new Alquiler(cliente5,pelicula6);
         Alquiler alquiler13=new Alquiler(cliente2,pelicula3);
         Alquiler alquiler14=new Alquiler(cliente1,pelicula5);
 
@@ -92,21 +104,21 @@ public class Main {
         Alquiler alquiler20=new Alquiler(cliente1,pelicula2);
         Alquiler alquiler21=new Alquiler(cliente1,pelicula1);
         Alquiler alquiler22=new Alquiler(cliente1,pelicula5);
-        Alquiler alquiler23=new Alquiler(cliente1,pelicula3);
-        Alquiler alquiler24=new Alquiler(cliente1,pelicula2);
-        Alquiler alquiler25=new Alquiler(cliente1,pelicula4);
+        Alquiler alquiler23=new Alquiler(cliente1,pelicula6);
+        Alquiler alquiler24=new Alquiler(cliente1,pelicula8);
+        Alquiler alquiler25=new Alquiler(cliente1,pelicula10);
 
 
 
         alquiler15.setCliente(cliente1);
-        alquiler15.setFechaDevolucion(LocalDate.parse("2021-07-09"));
+        alquiler15.setFechaDevolucion(LocalDate.parse("2022-04-10"));
         alquiler15.setFechaRetiro(LocalDate.parse("2021-07-06"));
         alquiler15.setCliente(cliente1);
         alquiler15.setPelicula(pelicula2);
         alquiler15.setEstadoAalquiler(false);
 
         alquiler16.setCliente(cliente2);
-        alquiler16.setFechaDevolucion(LocalDate.parse("2021-07-09"));
+        alquiler16.setFechaDevolucion(LocalDate.parse("2022-04-10"));
         alquiler16.setFechaRetiro(LocalDate.parse("2021-07-06"));
         alquiler16.setPelicula(pelicula3);
         alquiler16.setEstadoAalquiler(false);
@@ -168,10 +180,18 @@ public class Main {
 
         ///ALQUILERES VIGENTES
         //video.alquieleresVigentes();
+        ///DEVOLUCIUONES DEL DIA
+        //video.devolucionesDelDia();
         /// 10 ULTIMAS PELICULAS ALQULIADAS POR EL CLIENTE
         //video.peliculaCliente(cliente1);
         ///10 PELICULAS MAS ALQUILADAS
-        video.masAlquilados();
+        //video.masAlquilados();
+        System.out.println("==========================================");
+        ///PELICULAS POR GENERO
+        //video.peliculasPorGenero(Genero.aventura);
+        //INFORMACION DE PELICULA
+        video.verInfoPelicula();
+
 
 
 

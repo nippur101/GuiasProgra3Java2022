@@ -16,7 +16,7 @@ public class Pelicula implements Comparable<Pelicula>{
     public Pelicula() {
     }
 
-    public Pelicula(String titulo, String genero, String clasificacion, int duracionMin, String fechaLanzamiento, String pais, String descripcion, int nroCopiasDisponibles) {
+    public Pelicula(String titulo,String genero, String fechaLanzamiento, int duracionMin, String clasificacion , String pais, String descripcion, int nroCopiasDisponibles) {
         this.titulo = titulo;
         this.genero = genero;
         this.clasificacion = clasificacion;
