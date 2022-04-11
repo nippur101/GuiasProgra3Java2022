@@ -125,35 +125,43 @@ public class VideoStore  {
         return peliculaBuscada;
     }
     public void mostrarDatosPelicula(Pelicula pelicula){
-        System.out.println("Que datos de la pelicula desea ver:");
-        System.out.println("1-fecha de Lanzamiento\n2-Genero\n3-Clasificacion\n4-Duracion\n5-Pais de origen\n6-Descripcion\n7-Nro de copias");
-        Scanner entrada= new Scanner(System.in);
-        System.out.println("Ingrese un Numero \n");
-        int a=entrada.nextInt();
-        switch (a){
-            case 1:
-                System.out.println(pelicula.getFechaLanzamiento());
-                break;
-            case 2:
-                System.out.println(pelicula.getGenero());
-                break;
-            case 3:
-                System.out.println(pelicula.getClasificacion());
-                break;
-            case 4:
-                System.out.println(pelicula.getDuracionMin());
-                break;
-            case 5:
-                System.out.println(pelicula.getPais());
-                break;
-            case 6:
-                System.out.println(pelicula.getDescripcion());
-                break;
-            case 7:
-                System.out.println(pelicula.getNroCopiasDisponibles());
-                break;
-            default:
-                System.out.println("La opcion no es valida");
+        Scanner pauser = new Scanner (System.in);
+        int ban=1;
+        while (ban!=0) {
+            System.out.println("\nQue datos de la pelicula desea ver:");
+            System.out.println("1-fecha de Lanzamiento\n2-Genero\n3-Clasificacion\n4-Duracion\n5-Pais de origen\n6-Descripcion\n7-Nro de copias\n0-PARA SALIR");
+            Scanner entrada = new Scanner(System.in);
+            System.out.println("Ingrese un Numero \n");
+            int a = entrada.nextInt();
+            switch (a) {
+                case 0:
+                    ban=0;
+                    break;
+                case 1:
+                    System.out.println(pelicula.getFechaLanzamiento());
+                    break;
+                case 2:
+                    System.out.println(pelicula.getGenero());
+                    break;
+                case 3:
+                    System.out.println(pelicula.getClasificacion());
+                    break;
+                case 4:
+                    System.out.println(pelicula.getDuracionMin()+" Minutos");
+                    break;
+                case 5:
+                    System.out.println(pelicula.getPais());
+                    break;
+                case 6:
+                    System.out.println(pelicula.getDescripcion());
+                    break;
+                case 7:
+                    System.out.println("Numero de copias: "+pelicula.getNroCopiasDisponibles());
+                    break;
+                default:
+                    System.out.println("La opcion no es valida");
+            }
+            pauser.nextLine();
         }
 
     }
@@ -168,6 +176,42 @@ public class VideoStore  {
             mostrarDatosPelicula(buscarPelicula(nombrePeli));
         }
 
+    }
+
+    public Cliente buscarCliente(String client){
+        for(var cliente:clientes){
+            if(cliente.getNombre().equals(client)){
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+
+    public void alquilerPelicula(){
+
+        Scanner entrada= new Scanner(System.in);
+        System.out.println("Ingrese el Nombre del Cliente \n");
+        String clientName=entrada.nextLine();
+        Cliente clientEle=buscarCliente(clientName);
+        String nombrePeli="";
+        Pelicula peliEleg;
+
+        if(clientEle==null){
+            System.out.println("CLIENTE NO ENCONTRADO");
+        }else {
+
+            System.out.println("Ingrese el Nombre de la pelicula a buscar \n");
+            nombrePeli=entrada.nextLine();
+
+        }
+        peliEleg= buscarPelicula(nombrePeli);
+        if(peliEleg!=null) {
+            Alquiler a = new Alquiler(clientEle, peliEleg);
+            alquileres.add(a);
+            System.out.println("La Pelicula: "+a.getPelicula().getTitulo()+" la retira "+a.getCliente().getNombre()+"\nHoy: "+a.getFechaRetiro()+" Con devolucion el dia: "+a.getFechaDevolucion());
+            System.out.println("RETIRO REALIZADO CON EXITO");
+        }
 
 
     }

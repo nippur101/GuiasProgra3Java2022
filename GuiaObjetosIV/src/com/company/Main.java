@@ -33,12 +33,12 @@ public class Main {
     public static void main(String[] args) {
 
         //region CARGA CLIENTES
-        Cliente cliente1=new Cliente("Juan","Perez","Acha 163");
-        Cliente cliente2=new Cliente("Lionel","Messi","F Alcorta 363");
-        Cliente cliente3=new Cliente("Mariano","Martinez","Acevedo 4263");
-        Cliente cliente4=new Cliente("Paulo","Dybala","Edison 463");
-        Cliente cliente5=new Cliente("Angel","Di Maria","MarioBravo 478");
-        Cliente cliente6=new Cliente("Lautaro","Martinez","JuanB Justo 618");
+        Cliente cliente1=new Cliente("Juan Perez","459-58884","Acha 163");
+        Cliente cliente2=new Cliente("Lionel Messi","459-43884","F Alcorta 363");
+        Cliente cliente3=new Cliente("Mariano Martinez","489-55422","Acevedo 4263");
+        Cliente cliente4=new Cliente("Paulo Dybala","126-41514","Edison 463");
+        Cliente cliente5=new Cliente("Angel Di Maria","104-233153","MarioBravo 478");
+        Cliente cliente6=new Cliente("Lautaro Martinez","023-74516","JuanB Justo 618");
 
         List<Cliente> clientes=new ArrayList<>();
 
@@ -190,7 +190,9 @@ public class Main {
         ///PELICULAS POR GENERO
         //video.peliculasPorGenero(Genero.aventura);
         //INFORMACION DE PELICULA
-        video.verInfoPelicula();
+        //video.verInfoPelicula();
+        ///ALQULIAR PELICULA
+            video.alquilerPelicula();
 
 
 
