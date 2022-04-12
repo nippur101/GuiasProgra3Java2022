@@ -118,7 +118,7 @@ public class Pelicula implements Comparable<Pelicula>{
     public int compareTo(Pelicula o) {
         if(o.getNroVecesAlquilada()>this.nroVecesAlquilada){
             return 1;
-        }else if(o.getNroVecesAlquilada()>this.nroVecesAlquilada){
+        }else if(o.getNroVecesAlquilada()==this.nroVecesAlquilada){
             return 0;
         }else{
             return-1;

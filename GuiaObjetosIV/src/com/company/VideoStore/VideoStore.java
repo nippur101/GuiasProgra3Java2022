@@ -189,30 +189,33 @@ public class VideoStore  {
 
 
     public void alquilerPelicula(){
-
         Scanner entrada= new Scanner(System.in);
-        System.out.println("Ingrese el Nombre del Cliente \n");
-        String clientName=entrada.nextLine();
-        Cliente clientEle=buscarCliente(clientName);
         String nombrePeli="";
         Pelicula peliEleg;
-
-        if(clientEle==null){
-            System.out.println("CLIENTE NO ENCONTRADO");
-        }else {
-
-            System.out.println("Ingrese el Nombre de la pelicula a buscar \n");
-            nombrePeli=entrada.nextLine();
-
-        }
+        System.out.println("Ingrese el Nombre de la pelicula a buscar \n");
+        nombrePeli=entrada.nextLine();
         peliEleg= buscarPelicula(nombrePeli);
-        if(peliEleg!=null) {
-            Alquiler a = new Alquiler(clientEle, peliEleg);
-            alquileres.add(a);
-            System.out.println("La Pelicula: "+a.getPelicula().getTitulo()+" la retira "+a.getCliente().getNombre()+"\nHoy: "+a.getFechaRetiro()+" Con devolucion el dia: "+a.getFechaDevolucion());
-            System.out.println("RETIRO REALIZADO CON EXITO");
+        if(!peliEleg.equals(null)){
+            System.out.println("La Pelicula no fue encontrada");
         }
+        if(peliEleg.equals(null)) {
+            System.out.println("Ingrese el Nombre del Cliente \n");
+            String clientName = entrada.nextLine();
+            Cliente clientEle = buscarCliente(clientName);
 
+
+            if (clientEle == null) {
+                System.out.println("CLIENTE NO ENCONTRADO");
+            } else {
+                if (peliEleg.equals(null)) {
+                    Alquiler a = new Alquiler(clientEle, peliEleg);
+                    alquileres.add(a);
+                    System.out.println("La Pelicula: " + a.getPelicula().getTitulo() + " la retira " + a.getCliente().getNombre() + "\nHoy: " + a.getFechaRetiro() + " Con devolucion el dia: " + a.getFechaDevolucion());
+                    System.out.println("RETIRO REALIZADO CON EXITO");
+                }
+
+            }
+        }
 
     }
 
