@@ -66,23 +66,26 @@ public class VideoStore  {
     //Quiere poder consultar los últimos 10 alquileres de cada cliente.
 
     public void peliculaCliente(Cliente cliente){
-        ArrayList<Pelicula> peliCliente=new ArrayList<>();
+        List<Pelicula> peliCliente=new ArrayList<>();
         for(Alquiler a:this.alquileres){
             if(a.getCliente().equals(cliente)) {
                 peliCliente.add(a.getPelicula());
             }
         }
-        int fin;
-        int cont=peliCliente.size()-1;
-        if(cont<10){
-            fin=0;
-        }else{
-            fin=cont-10;
-        }
-        while(cont>=0 && cont!=fin){
+        Collections.reverse(peliCliente); // INVERTIR ARRAYLIST
+
+        int cont=0;
+        for(Pelicula film:peliCliente){
             System.out.println(peliCliente.get(cont).getTitulo());
-            cont--;
+            cont++;
+            if(cont==10){
+                break;
+            }
         }
+
+
+
+
     }
     //Quiere una forma de consultar los títulos que fueron más alquilados.
     public void masAlquilados(){
@@ -195,10 +198,10 @@ public class VideoStore  {
         System.out.println("Ingrese el Nombre de la pelicula a buscar \n");
         nombrePeli=entrada.nextLine();
         peliEleg= buscarPelicula(nombrePeli);
-        if(!peliEleg.equals(null)){
+        if(peliEleg ==null){
             System.out.println("La Pelicula no fue encontrada");
         }
-        if(peliEleg.equals(null)) {
+        if(peliEleg!=(null)) {
             System.out.println("Ingrese el Nombre del Cliente \n");
             String clientName = entrada.nextLine();
             Cliente clientEle = buscarCliente(clientName);
@@ -207,16 +210,26 @@ public class VideoStore  {
             if (clientEle == null) {
                 System.out.println("CLIENTE NO ENCONTRADO");
             } else {
-                if (peliEleg.equals(null)) {
+                if (peliEleg!=(null) && peliEleg.getNroCopiasDisponibles()>0) {
                     Alquiler a = new Alquiler(clientEle, peliEleg);
                     alquileres.add(a);
                     System.out.println("La Pelicula: " + a.getPelicula().getTitulo() + " la retira " + a.getCliente().getNombre() + "\nHoy: " + a.getFechaRetiro() + " Con devolucion el dia: " + a.getFechaDevolucion());
                     System.out.println("RETIRO REALIZADO CON EXITO");
+                }else{
+                    System.out.println("Todas las copias fueron alquiladas");
                 }
 
             }
         }
 
+    }
+    public void devolverPelicula(Cliente client,Pelicula film){
+        for(Alquiler alquiler:alquileres){
+            if(client.equals(alquiler.getCliente()) && film.equals(alquiler.getPelicula()) && alquiler.isEstadoAalquiler()){
+                alquiler.setEstadoAalquiler(false);
+                film.setNroCopiasDisponibles(film.getNroCopiasDisponibles()+1);
+            }
+        }
     }
 
 }

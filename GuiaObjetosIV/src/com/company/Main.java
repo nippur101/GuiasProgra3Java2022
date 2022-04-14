@@ -22,6 +22,7 @@ package com.company;
 
 import com.company.VideoStore.*;
 
+import javax.sound.midi.Soundbank;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -53,7 +54,7 @@ public class Main {
         // region CARGA PELICULAS
         Pelicula pelicula1=new Pelicula( "Duro de Matar",Genero.accion,"1988",139,Clasificacion.R,"Estados Unidos","John McClane, policía de Nueva York, llega a Los Ángeles para celebrar la Navidad, pero se ve envuelto en una lucha contra un grupo de malhechores que toman de rehén a su esposa en un rascacielos, el Nakatomi Plaza.",9);
         Pelicula pelicula2=new Pelicula("Duro de Matar 2",Genero.accion ,"1990",124,Clasificacion.R,"Estados Unidos","Un policía de Los Ángeles pelea contra una banda de terroristas que han tomado el aeropuerto de Washington D. C.",8);
-        Pelicula pelicula3=new Pelicula("Titanic",Genero.drama, "1997",195,Clasificacion.PG13,"Estados Unidos","Una joven de la alta sociedad abandona a su arrogante pretendiente por un artista humilde en el trasatlántico que se hundió durante su viaje inaugural.",10);
+        Pelicula pelicula3=new Pelicula("Titanic",Genero.drama, "1997",195,Clasificacion.PG13,"Estados Unidos","Una joven de la alta sociedad abandona a su arrogante pretendiente por un artista humilde en el trasatlántico que se hundió durante su viaje inaugural.",6);
         Pelicula pelicula4=new Pelicula("Guason",Genero.drama ,"2019",122,Clasificacion.R,"Estados Unidos","Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.",8);
         Pelicula pelicula5=new Pelicula("John Wick",Genero.accion, "2014",114,Clasificacion.R,"Estados Unidos","John Wick es una franquicia de medios de acción y suspenso neo-noir estadounidense",10);
         Pelicula pelicula6=new Pelicula("Audible",Genero.documental, "2021",39,Clasificacion.R,"Estados Unidos","Conmocionado por el suicido de un amigo, Amaree McKenstry-Hall un jugador de fútbol americano de una escuela para sordos sobrelleva su vida como puede mientras se prepara para su último partido.",7);
@@ -107,13 +108,13 @@ public class Main {
         Alquiler alquiler23=new Alquiler(cliente1,pelicula6);
         Alquiler alquiler24=new Alquiler(cliente1,pelicula8);
         Alquiler alquiler25=new Alquiler(cliente1,pelicula10);
+        Alquiler alquiler26=new Alquiler(cliente1,pelicula9);
 
 
 
         alquiler15.setCliente(cliente1);
         alquiler15.setFechaDevolucion(LocalDate.parse("2022-04-10"));
         alquiler15.setFechaRetiro(LocalDate.parse("2021-07-06"));
-        alquiler15.setCliente(cliente1);
         alquiler15.setPelicula(pelicula2);
         alquiler15.setEstadoAalquiler(false);
 
@@ -170,7 +171,7 @@ public class Main {
         alquileres.add(alquiler23);
         alquileres.add(alquiler24);
         alquileres.add(alquiler25);
-
+        alquileres.add(alquiler26);
         //endregion
 
 
@@ -183,7 +184,7 @@ public class Main {
         ///DEVOLUCIUONES DEL DIA
         //video.devolucionesDelDia();
         /// 10 ULTIMAS PELICULAS ALQULIADAS POR EL CLIENTE
-        //video.peliculaCliente(cliente1);
+       // video.peliculaCliente(cliente1);
         ///10 PELICULAS MAS ALQUILADAS
         //video.masAlquilados();
         System.out.println("==========================================");
@@ -192,9 +193,14 @@ public class Main {
         //INFORMACION DE PELICULA
         //video.verInfoPelicula();
         ///ALQULIAR PELICULA
-            video.alquilerPelicula();
+        System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 
+            video.devolverPelicula(cliente2,pelicula3);
 
+        System.out.println(peliculas.get(2).getNroCopiasDisponibles());
+
+        video.alquilerPelicula();
+        System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 
 
     }

@@ -3,6 +3,8 @@ package com.company.VideoStore;
 import java.time.LocalDate;
 
 public class Alquiler {
+    private int id;
+    private static int idSt=0;
     private Cliente cliente;
     private Pelicula pelicula;
     private LocalDate fechaRetiro;
@@ -20,6 +22,8 @@ public class Alquiler {
         this.estadoAalquiler = true;
         cliente.setNroAlquileres(cliente.getNroAlquileres()+1);
         pelicula.setNroVecesAlquilada(pelicula.getNroVecesAlquilada()+1);
+        pelicula.setNroCopiasDisponibles(pelicula.getNroCopiasDisponibles()-1);
+        this.id=++idSt;
     }
 
     public Cliente getCliente() {
@@ -60,6 +64,14 @@ public class Alquiler {
 
     public void setFechaDevolucion(LocalDate fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
