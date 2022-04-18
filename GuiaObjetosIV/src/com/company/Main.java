@@ -195,7 +195,7 @@ public class Main {
         ///ALQULIAR PELICULA
         System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 
-            video.devolverPelicula(cliente2,pelicula3);
+           // video.devolverPelicula(cliente2,pelicula3);
 
         System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 

@@ -201,6 +201,9 @@ public class VideoStore  {
         if(peliEleg ==null){
             System.out.println("La Pelicula no fue encontrada");
         }
+        if(peliEleg!=null && peliEleg.getNroCopiasDisponibles()!=0){
+
+
         if(peliEleg!=(null)) {
             System.out.println("Ingrese el Nombre del Cliente \n");
             String clientName = entrada.nextLine();
@@ -220,6 +223,9 @@ public class VideoStore  {
                 }
 
             }
+        }
+        }else{
+            System.out.println("La pelicula se encuentra en catalogo pero NO hay copias disponibles");
         }
 
     }
