@@ -208,9 +208,13 @@ public class Main {
         mostrarArray(video.masAlquilados());
 
     }
+
     public static <T> void mostrarArray(List<T> lista ){
         for(T objeto:lista){
             System.out.println(objeto);
         }
     }
+
+
+
 }

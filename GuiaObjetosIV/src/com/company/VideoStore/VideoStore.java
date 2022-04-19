@@ -183,7 +183,7 @@ public class VideoStore  {
     }
 
     public Cliente buscarCliente(String client){
-        for(var cliente:clientes){
+        for(Cliente cliente:clientes){
             if(cliente.getNombre().equals(client)){
                 return cliente;
             }
