@@ -193,6 +193,7 @@ public class Main {
         //INFORMACION DE PELICULA
         //video.verInfoPelicula();
         ///ALQULIAR PELICULA
+        /*
         System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 
            // video.devolverPelicula(cliente2,pelicula3);
@@ -203,5 +204,13 @@ public class Main {
         System.out.println(peliculas.get(2).getNroCopiasDisponibles());
 
 
+         */
+        mostrarArray(video.masAlquilados());
+
+    }
+    public static <T> void mostrarArray(List<T> lista ){
+        for(T objeto:lista){
+            System.out.println(objeto);
+        }
     }
 }

@@ -88,7 +88,7 @@ public class VideoStore  {
 
     }
     //Quiere una forma de consultar los títulos que fueron más alquilados.
-    public void masAlquilados(){
+    public List<Pelicula> masAlquilados(){ // List<Pelicula> cambiado para mostrar generico de objetos
 
         List<Pelicula> peliPopulares=new ArrayList<>();
         peliPopulares=this.peliculas;
@@ -101,6 +101,7 @@ public class VideoStore  {
                 break;
             }
         }
+        return peliPopulares;// cambiado para el uso de mostrar generico
     }
     public void peliculasPorGenero(String genero){
         List<Pelicula> ordenGeneropelis=new ArrayList<>();
