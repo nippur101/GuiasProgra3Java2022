@@ -46,6 +46,18 @@ public class Main {
         Cancion cancion35=new Cancion("Up against me",182, Genero.pop,album3,artistas3);
         Cancion cancion36=new Cancion("Other people",244, Genero.pop,album3,artistas3);
 
+        Artista artista4=new Artista("Sytem of a down",43,"Estados Unidos");
+        List<Artista> artistas4=new ArrayList<>();
+        artistas4.add(artista4);
+        Album album4=new Album("Toxicity",2017,artista4);
+        Cancion cancion41=new Cancion("Prison Song",201, Genero.metal,album4,artistas4);
+        Cancion cancion42=new Cancion("X",118, Genero.metal,album4,artistas4);
+        Cancion cancion43=new Cancion("Chop Suey!",210, Genero.metal,album4,artistas4);
+        Cancion cancion44=new Cancion("Toxicity",218, Genero.metal,album4,artistas4);
+        Cancion cancion45=new Cancion("Aerials",235, Genero.metal,album4,artistas4);
+        Cancion cancion46=new Cancion("Science",162, Genero.metal,album4,artistas4);
+
+
 
     }
 }

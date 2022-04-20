@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0a335ce-afa6-4de7-a188-33e18c464046" name="Changes" comment="" />
+    <list default="true" id="e0a335ce-afa6-4de7-a188-33e18c464046" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Alquiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Alquiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Clasificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Clasificacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/CompararPeliculas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/CompararPeliculas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Genero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Genero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Pelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/Pelicula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/VideoStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosIV/out/production/GuiaObjetosIV/com/company/VideoStore/VideoStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -14,7 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="281Jh03iuoq4tejttGLOR0wg2Yn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,6 +45,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -34,6 +61,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -53,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650378279290</updated>
       <workItem from="1650378281091" duration="1867000" />
+      <workItem from="1650413992701" duration="1348000" />
     </task>
     <servers />
   </component>
