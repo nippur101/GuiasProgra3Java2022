@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a335ce-afa6-4de7-a188-33e18c464046" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/IReproduccion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/IReproduccion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/ListaPremium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosV/com/company/Spotify/ListaPremium.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Spotify/IReproduccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Spotify/IReproduccion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Spotify/ListaBasica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Spotify/ListaBasica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Spotify/ListaPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Spotify/ListaPremium.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <workItem from="1650413992701" duration="1348000" />
       <workItem from="1650416420875" duration="594000" />
       <workItem from="1650489570512" duration="10341000" />
-      <workItem from="1650803223815" duration="6064000" />
+      <workItem from="1650803223815" duration="12392000" />
     </task>
     <servers />
   </component>

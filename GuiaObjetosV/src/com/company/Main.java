@@ -127,9 +127,32 @@ public class Main {
 
 
     public static void Menu(App app) {
+        String tipo="";
         Scanner teclado = new Scanner(System.in);
-        int op1=1;
+        int op0=-1;
+        System.out.println("Elija:\n1-Lista Basica\n2-Lista Premium");
+        op0 = Integer.parseInt(teclado.next());
+        switch (op0){
+            case 0:
+                System.out.println("Saliendo......");break;
+            case 1:ListaBasica listaB=new ListaBasica();
+                listaB=app.getListasBasicas().get(0);
+                tipo="basica";
+                break;
+            case 2:ListaPremium listaP=new ListaPremium();
+                listaP=app.getListasPremium().get(0);
+                tipo="premium";
+                break;
+        }
+
+        int op1=43;
         while (op1!=0) {
+            Scanner pauser = new Scanner(System.in);
+            if(op1!=43){
+                pauser.nextLine();
+            }
+
+            System.out.println("\n----------------------");
             System.out.println("Menu de Opciones:");
             System.out.println("1-Mostrar canciones\n2-Agregar cancion\n3-Remover cancion\n4-Reproducir\n0-SALIR");
             System.out.println("----------------------");
@@ -142,17 +165,32 @@ public class Main {
                 case 0:
                     System.out.println("Saliendo......");break;
                 case 1:
-
-                    app.getListasPremium().get(0).verMiLista();
+                    if(tipo.equals("premium")) {
+                        app.getListasPremium().get(0).verMiLista();
+                    }else{
+                        app.getListasBasicas().get(0).verMiLista();
+                    }
                     break;
                 case 2:
-
-                    app.getListasPremium().get(0).añadirCancion(app.elegirCancionLista());
+                    if(tipo.equals("premium")) {
+                        app.getListasPremium().get(0).añadirCancion(app.elegirCancionLista());
+                    } else{
+                        app.getListasBasicas().get(0).añadirCancion(app.elegirCancionLista());
+                    }
                     break;
                 case 3:
+                    if(tipo.equals("premium")) {
                     app.getListasPremium().get(0).eliminarCancion(app.getListasPremium().get(0).seleccionarCancionBorrar());
+                    } else{
+                        app.getListasBasicas().get(0).eliminarCancion(app.getListasBasicas().get(0).getMiLista().get(0));
+                    }
                     break;
                 case 4:
+                    if(tipo.equals("premium")) {
+                        app.getListasPremium().get(0).reproduccion();
+                    }else {
+                        app.getListasBasicas().get(0).reproduccion();
+                    }
                     break;
                 default:
                     System.out.println("Elija una opcion correcta");

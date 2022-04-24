@@ -12,7 +12,7 @@ import java.util.Stack;
 //- VerMiLista: Nos permite ver nuestra lista de reproducción.
 //3)
 public interface IReproduccion {
-    void reproduccion(List<Cancion> songs);
+    void reproduccion();
     void añadirCancion(Cancion song);
     void eliminarCancion(Cancion song);
     void verMiLista();

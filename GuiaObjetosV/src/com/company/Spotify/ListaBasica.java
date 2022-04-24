@@ -1,6 +1,8 @@
 package com.company.Spotify;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class ListaBasica implements IReproduccion{
@@ -30,10 +32,28 @@ public class ListaBasica implements IReproduccion{
     public void setMiLista(Stack<Cancion> miLista) {
         this.miLista = miLista;
     }
+    private void moverTopeAlFinal(){
+        Cancion tope=miLista.pop();
+        Stack<Cancion> aux=new Stack<>();
+
+        while(!miLista.empty()){
+            aux.push(miLista.pop());
+        }
+
+        miLista.push(tope);
+        while (!aux.empty()){
+            miLista.push(aux.pop());
+        }
+
+    }
 
     @Override
-    public void reproduccion(List<Cancion> songs) {
-        System.out.println(songs.toString());
+    public void reproduccion() {
+
+        System.out.println(miLista.peek().toString());
+        this.moverTopeAlFinal();
+
+
     }
 
     @Override
@@ -48,6 +68,7 @@ public class ListaBasica implements IReproduccion{
 
     @Override
     public void verMiLista() {
+
         int cont=0;
         System.out.println("-------------------------");
         for(Cancion canciones:miLista){
@@ -55,6 +76,8 @@ public class ListaBasica implements IReproduccion{
             cont++;
         }
         System.out.println("-------------------------\n");
+
+
 
 
     }
