@@ -1,5 +1,6 @@
 package com.company.Spotify;
 
+import java.util.List;
 import java.util.Stack;
 
 //Reproducir: Debe mostrar la canción en reproducción, junto con el nombre del
@@ -11,9 +12,9 @@ import java.util.Stack;
 //- VerMiLista: Nos permite ver nuestra lista de reproducción.
 //3)
 public interface IReproduccion {
-    void reproduccion(Stack<Cancion> songs);
+    void reproduccion(List<Cancion> songs);
     void añadirCancion(Cancion song);
-    void eliminarCancion();
+    void eliminarCancion(Cancion song);
     void verMiLista();
 
 

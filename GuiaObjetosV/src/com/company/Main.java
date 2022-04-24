@@ -1,16 +1,13 @@
 package com.company;
 
-import com.company.Spotify.Album;
-import com.company.Spotify.Artista;
-import com.company.Spotify.Cancion;
-import com.company.Spotify.Genero;
+import com.company.Spotify.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
+        //region CARGA
         Artista artista1=new Artista("Ciro y los persas",50,"Argentino");
         List<Artista> artistas1=new ArrayList<>();
         artistas1.add(artista1);
@@ -57,7 +54,114 @@ public class Main {
         Cancion cancion45=new Cancion("Aerials",235, Genero.metal,album4,artistas4);
         Cancion cancion46=new Cancion("Science",162, Genero.metal,album4,artistas4);
 
+        List<Album> albunes=new ArrayList<>();
+        albunes.add(album1);
+        albunes.add(album2);
+        albunes.add(album3);
+        albunes.add(album4);
 
+        List<Cancion> canciones=new ArrayList<>();
+        canciones.add(cancion11);
+        canciones.add(cancion12);
+        canciones.add(cancion13);
+        canciones.add(cancion14);
+        canciones.add(cancion15);
+        canciones.add(cancion16);
+        canciones.add(cancion17);
+        canciones.add(cancion21);
+        canciones.add(cancion22);
+        canciones.add(cancion23);
+        canciones.add(cancion24);
+        canciones.add(cancion25);
+        canciones.add(cancion26);
+        canciones.add(cancion27);
+        canciones.add(cancion31);
+        canciones.add(cancion32);
+        canciones.add(cancion33);
+        canciones.add(cancion34);
+        canciones.add(cancion35);
+        canciones.add(cancion36);
+        canciones.add(cancion41);
+        canciones.add(cancion42);
+        canciones.add(cancion43);
+        canciones.add(cancion44);
+        canciones.add(cancion45);
+        canciones.add(cancion46);
+
+        List<Artista> artistas=new ArrayList<>();
+        artistas.add(artista1);
+        artistas.add(artista2);
+        artistas.add(artista3);
+        artistas.add(artista4);
+
+
+        Stack<Cancion> listaBas=new Stack<>();
+        listaBas.push(cancion13);
+        listaBas.push(cancion21);
+        listaBas.push(cancion33);
+        listaBas.push(cancion41);
+        listaBas.push(cancion17);
+        listaBas.push(cancion26);
+        ListaBasica listaBasica1=new ListaBasica("Tranki",listaBas);
+        List<ListaBasica> listasbasicas=new ArrayList<>();
+        listasbasicas.add(listaBasica1);
+
+        LinkedList<Cancion> listaPre=new LinkedList<>();
+        listaPre.add(cancion14);
+        listaPre.add(cancion24);
+        listaPre.add(cancion34);
+        listaPre.add(cancion44);
+        listaPre.add(cancion31);
+        listaPre.add(cancion41);
+        ListaPremium listaPremium1=new ListaPremium("Movidito",listaPre);
+        List<ListaPremium> listaspremium=new ArrayList<>();
+        listaspremium.add(listaPremium1);
+
+
+        App Spoti=new App(albunes,artistas,canciones,listasbasicas,listaspremium);
+//endregion
+
+
+        Menu(Spoti);
+    }
+
+
+    public static void Menu(App app) {
+        Scanner teclado = new Scanner(System.in);
+        int op1=1;
+        while (op1!=0) {
+            System.out.println("Menu de Opciones:");
+            System.out.println("1-Mostrar canciones\n2-Agregar cancion\n3-Remover cancion\n4-Reproducir\n0-SALIR");
+            System.out.println("----------------------");
+
+
+            op1 = Integer.parseInt(teclado.next());
+
+
+            switch (op1) {
+                case 0:
+                    System.out.println("Saliendo......");break;
+                case 1:
+
+                    app.getListasPremium().get(0).verMiLista();
+                    break;
+                case 2:
+
+                    app.getListasPremium().get(0).añadirCancion(app.elegirCancionLista());
+                    break;
+                case 3:
+                    app.getListasPremium().get(0).eliminarCancion(app.getListasPremium().get(0).seleccionarCancionBorrar());
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Elija una opcion correcta");
+            }
+        }
+    }
+    public static void MenuBasic(App app){
 
     }
+
+
 }
