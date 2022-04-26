@@ -77,8 +77,5 @@ public class ListaBasica implements IReproduccion{
         }
         System.out.println("-------------------------\n");
 
-
-
-
     }
 }
