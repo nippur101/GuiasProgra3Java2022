@@ -19,4 +19,44 @@ public class Password {
         }
         return sb.toString();
     }
+    private int contarMayusculas(String palabra){
+        int cont=0;
+        for(int i=0;i<palabra.length();i++){
+            if(Character.isUpperCase(palabra.charAt(i))){
+                cont++;
+            }
+        }
+        return cont;
+    }
+    private int contarMinusculas(String palabra){
+        int cont=0;
+        for(int i=0;i<palabra.length();i++){
+            if(Character.isLowerCase(palabra.charAt(i))){
+                cont++;
+            }
+        }
+        return cont;
+    }
+    private int contarNumeros(String palabra){
+        int cont=0;
+        for(int i=0;i<palabra.length();i++){
+            if(Character.isDigit(palabra.charAt(i))){
+                cont++;
+            }
+        }
+        return cont;
+    }
+
+    public boolean esFuerte(){
+        int may,min,num;
+        may=contarMayusculas(this.contrasenia);
+        min=contarMinusculas(this.contrasenia);
+        num=contarNumeros(this.contrasenia);
+        System.out.println(may+"-"+min+" -"+num);
+        if(may>2 && min>1 && num>5){
+            return true;
+        }
+        return false;
+
+    }
 }
