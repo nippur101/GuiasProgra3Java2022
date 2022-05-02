@@ -1,5 +1,7 @@
 package com.company.Health;
 
+import java.util.Objects;
+
 public class Persona {
     private long dni;
     private String nombre="";
@@ -19,7 +21,7 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    public Persona(int dni, String nombre, int edad, char sexo, double peso, double altura) {
+    public Persona(long dni, String nombre, int edad, char sexo, double peso, double altura) {
         this.dni = this.generaDNI();
         this.nombre = nombre;
         this.edad = edad;
@@ -74,13 +76,14 @@ public class Persona {
         this.altura = altura;
     }
 
-    public double calcularIMC(){
+    public int calcularIMC(){
         double imc=this.peso/Math.pow(this.altura,2.0);
+        System.out.println("IMC: "+imc);
         if(imc<20){
             return -1;
-        }else if(imc>20 && imc<=25){
+        }else if(imc>=20 && imc<=25){
             return 0;
-        }else{
+        }else  {
             return 1;
         }
 
@@ -102,11 +105,29 @@ public class Persona {
     public long generaDNI(){
         return Math.round(Math.random()*100000000);
     }
+
     @Override
     public String toString() {
         return "Persona{" +
                 "dni=" + dni +
                 ", nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", sexo=" + sexo +
+                ", peso=" + peso +
+                ", altura=" + altura +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return dni == persona.dni;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dni);
     }
 }

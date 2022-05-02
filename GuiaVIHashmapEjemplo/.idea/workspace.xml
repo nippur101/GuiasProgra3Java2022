@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="882296da-082f-4cf8-a645-f02ba30cb998" name="Changes" comment="" />
+    <list default="true" id="882296da-082f-4cf8-a645-f02ba30cb998" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../GuiaObjetosVI/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Health.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Health.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Password.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Password.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Health/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/out/production/GuiaObjetosVI/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Health.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Health/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosVI/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,12 +89,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -108,10 +122,23 @@
       <workItem from="1650979640052" duration="764000" />
       <workItem from="1651061497845" duration="594000" />
       <workItem from="1651070362977" duration="584000" />
+      <workItem from="1651094701797" duration="618000" />
+      <workItem from="1651529309465" duration="2050000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9139474c-ffa1-4ea7-8fc7-73fe9e65b61c" name="Changes" comment="" />
+    <list default="true" id="9139474c-ffa1-4ea7-8fc7-73fe9e65b61c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/out/production/GuiaObjetosV/com/company/Spotify/ListaBasica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaObjetosV/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaObjetosV/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Health.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Health.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Password.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Password.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Health/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuiaObjetosVI/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Health/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Health/Health.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Health/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Health/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Health/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Health/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaVIHashmapEjemplo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaVIHashmapEjemplo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,9 +96,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programacion/Tecnicatura/Programacion 3 2022/GitHub/GuiasProgra3Java2022/GuiaObjetosV"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -112,10 +131,23 @@
       <workItem from="1650926939518" duration="6835000" />
       <workItem from="1651060606706" duration="1376000" />
       <workItem from="1651069692826" duration="2826000" />
+      <workItem from="1651094727587" duration="2760000" />
+      <workItem from="1651527651318" duration="7546000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
