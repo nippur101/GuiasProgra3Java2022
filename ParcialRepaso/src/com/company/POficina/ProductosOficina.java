@@ -37,13 +37,12 @@ public abstract class ProductosOficina {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+    public abstract double actualizarPrecios();
 
     @Override
     public String toString() {
-        return "ProductosOficina{" +
-                "nroStock=" + nroStock +
+        return  "nroStock=" + nroStock +
                 ", nombre='" + nombre + '\'' +
-                ", precio=" + precio +
-                '}';
+                ", precio=" + precio ;
     }
 }

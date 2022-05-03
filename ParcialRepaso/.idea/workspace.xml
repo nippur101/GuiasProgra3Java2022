@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77a135fd-5299-4e19-8c4b-252bf82b32d5" name="Changes" comment="" />
+    <list default="true" id="77a135fd-5299-4e19-8c4b-252bf82b32d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/POficina/IDescuentos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuiaVIHashmapEjemplo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuiaVIHashmapEjemplo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/POficina/Escritorios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/POficina/Escritorios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/POficina/Impresoras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/POficina/Impresoras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/POficina/Notebooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/POficina/Notebooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/POficina/ProductosOficina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/POficina/ProductosOficina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/POficina/Silla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/POficina/Silla.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -81,10 +92,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GuiaObjetosIV" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programacion/Tecnicatura/Programacion 3 2022/GitHub/GuiasProgra3Java2022/GuiaObjetosIV"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -96,6 +111,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -106,10 +126,22 @@
       <option name="presentableId" value="Default" />
       <updated>1651586997963</updated>
       <workItem from="1651587000365" duration="2784000" />
+      <workItem from="1651604210164" duration="2986000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

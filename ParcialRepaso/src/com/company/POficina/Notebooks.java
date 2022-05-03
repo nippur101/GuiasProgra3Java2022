@@ -21,8 +21,12 @@ public class Notebooks extends ProductosInformaticos{
 
     @Override
     public String toString() {
-        return "Notebooks{" +super.toString()+
-                "gbRam=" + gbRam +
-                '}';
+        return super.toString()+
+                " gbRam=" + gbRam ;
+    }
+    public double actualizarPrecios(){
+        double precioNotebook=this.getPrecio()*1.2;
+        this.setPrecio(precioNotebook);
+        return precioNotebook;
     }
 }

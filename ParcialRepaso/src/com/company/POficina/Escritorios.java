@@ -31,9 +31,13 @@ public class Escritorios extends Muebles {
 
     @Override
     public String toString() {
-        return "Escritorios{" +super.toString()+
-                "ancho=" + ancho +
-                ", alto=" + alto +
-                '}';
+        return super.toString()+
+                " ancho=" + ancho +
+                ", alto=" + alto ;
+    }
+    public double actualizarPrecios(){
+        double precioEscritorio=this.getPrecio()*1.1;
+        this.setPrecio(precioEscritorio);
+        return precioEscritorio;
     }
 }

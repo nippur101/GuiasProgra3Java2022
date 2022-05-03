@@ -1,6 +1,6 @@
 package com.company.POficina;
 
-public class Silla extends Muebles {
+public class Silla extends Muebles implements IDescuentos{
     private boolean contieneruedas;
     public Silla() {
 
@@ -25,8 +25,18 @@ public class Silla extends Muebles {
 
     @Override
     public String toString() {
-        return "Silla{" +super.toString()+
-                "contieneruedas=" + contieneruedas +
-                '}';
+        return super.toString()+
+                " contieneruedas=" + contieneruedas ;
+    }
+
+
+    @Override
+    public double precioConDescuento(int porcentajeDescuento) {
+        return this.getPrecio()*(1-(double)porcentajeDescuento/100.0);
+    }
+    public double actualizarPrecios(){
+      double precioSilla=this.getPrecio()*1.05;
+        this.setPrecio(precioSilla);
+        return precioSilla;
     }
 }

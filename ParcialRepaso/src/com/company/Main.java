@@ -9,6 +9,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+//region CARGA DE DATOS
         Escritorios desk1=new Escritorios(5,"King",54000.0,1.5,1.6);
         Escritorios desk2=new Escritorios(4,"Queen",45000.0,1.4,1.5);
         Impresoras print1=new Impresoras(6,"Epson2000",25600.0,"Epson",54);
@@ -26,17 +27,45 @@ public class Main {
         stock.add(notebook2);
         stock.add(chear1);
         stock.add(chear2);
+//endregion
+        //mostrar(stock);
+        //IngresoDescuento(print1,chear1);
 
-
-
+        mostrarPrecioActualizado(stock);
 
     }
-    public static <T> void mostrar(List<ProductosOficina> stock,T obj,String objeto){
+    public static void mostrar(List<ProductosOficina> stock){
         for(ProductosOficina productos:stock){
-
-            if(productos instanceof obj) {
-
+            if(productos instanceof Escritorios) {
+                System.out.println("Escritorio: "+productos.toString());
             }
+            if(productos instanceof Impresoras) {
+                System.out.println("Impresoras: "+productos.toString());
+            }
+            if(productos instanceof Notebooks) {
+                System.out.println("Notebook: "+productos.toString());
+            }
+            if(productos instanceof Silla) {
+                System.out.println("Sillas: "+productos.toString());
+            }
+        }
+    }
+    public static void IngresoDescuento(Impresoras print,Silla chear){
+        System.out.println("======================================");
+        System.out.println(print.toString());
+        System.out.println("Precio con descuento: "+print.precioConDescuento(30));
+        System.out.println("======================================");
+        System.out.println(chear.toString());
+        System.out.println("Precio con descuento: "+chear.precioConDescuento(35));
+
+    }
+    public static void mostrarPrecioActualizado(List<ProductosOficina> stock){
+        System.out.println("====================================================================");
+        mostrar(stock);
+        System.out.println("======================================");
+        for(ProductosOficina lista:stock){
+            System.out.println(lista.toString());
+            System.out.println("Precio Actualizado: "+lista.actualizarPrecios());
         }
     }
 }

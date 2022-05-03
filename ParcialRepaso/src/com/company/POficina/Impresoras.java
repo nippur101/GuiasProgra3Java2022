@@ -1,6 +1,6 @@
 package com.company.POficina;
 
-public class Impresoras extends ProductosInformaticos{
+public class Impresoras extends ProductosInformaticos implements IDescuentos{
     private int copiasPorMinuto;
 
     public Impresoras() {
@@ -21,8 +21,18 @@ public class Impresoras extends ProductosInformaticos{
 
     @Override
     public String toString() {
-        return "Impresoras{" +super.toString()+
-                "copiasPorMinuto=" + copiasPorMinuto +
-                '}';
+        return super.toString()+
+                " copiasPorMinuto=" + copiasPorMinuto ;
+    }
+
+
+    @Override
+    public double precioConDescuento(int porcentajeDescuento) {
+        return this.getPrecio()*(1-(double)porcentajeDescuento/100.0);
+    }
+    public double actualizarPrecios(){
+        double precioImpresora=this.getPrecio()*1.15;
+        this.setPrecio(precioImpresora);
+        return precioImpresora;
     }
 }
