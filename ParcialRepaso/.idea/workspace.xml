@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="882296da-082f-4cf8-a645-f02ba30cb998" name="Changes" comment="" />
+    <list default="true" id="77a135fd-5299-4e19-8c4b-252bf82b32d5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -13,7 +20,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28KyZC2Rf7jRt0ISEvA7u3YgMRP" />
+  <component name="ProjectId" id="28epdCSUGoNxUu1prDIqZL5bcu1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -76,11 +83,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GuiaObjetosIV" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="GuiaVIHashmapEjemplo" />
+      <module name="ParcialRepaso" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -88,41 +96,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="882296da-082f-4cf8-a645-f02ba30cb998" name="Changes" comment="" />
-      <created>1650979638929</created>
+      <changelist id="77a135fd-5299-4e19-8c4b-252bf82b32d5" name="Changes" comment="" />
+      <created>1651586997963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650979638929</updated>
-      <workItem from="1650979640052" duration="764000" />
-      <workItem from="1651061497845" duration="594000" />
-      <workItem from="1651070362977" duration="584000" />
-      <workItem from="1651094701797" duration="618000" />
-      <workItem from="1651529309465" duration="2050000" />
-      <workItem from="1651586348827" duration="1222000" />
+      <updated>1651586997963</updated>
+      <workItem from="1651587000365" duration="2784000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
